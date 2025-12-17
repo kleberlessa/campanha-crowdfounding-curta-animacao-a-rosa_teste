@@ -1,0 +1,48 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# macOS files
+._*
+.AppleDouble
+.LSOverride
+Icon
+
+# IDE-specific files
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# Vim
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
+*~
+*.log
+
+# Node.js and dependencies 
+node_modules/
+npm-debug.log
+npm-debug.log*
+yarn-debug.log
+yarn-error.log
+.pnp/
+.pnp.js
+
+# Build artifacts
+dist/
+build/
+
+# Local configuration
+.env
+.env.*
+
+# Xet Data specific
+.xet/
+*.xetdata
+*.xetbackup
+*xet
