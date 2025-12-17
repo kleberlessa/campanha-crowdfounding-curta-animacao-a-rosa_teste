@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apoie a campanha de crowdfunding para 'A ROSA', um curta de animação poético sobre amor, perda e aceitação. Contribua e ajude a dar vida a esta história.">
+    <title>Campanha de Crowdfunding “A ROSA”</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="99x99" href="favicon/logo_001-Ciano10-azul-meia-noite_99x99.png">
+    <link rel="apple-touch-icon" sizes="99x99" href="favicon/logo_001-Ciano10-azul-meia-noite_99x99.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="metas-estendidas/index.html">Metas Estendidas</a></li>
+            <li><a href="recompensa-semente/index.html">A Semente</a></li>
+            <li><a href="recompensa-o-broto/index.html">O Broto</a></li>
+            <li><a href="recompensa-o-espinho/index.html">O Espinho</a></li>
+            <li><a href="recompensa-o-buque-de-rosas/index.html">O Buquê de Rosas</a></li>
+            <li><a href="recompensa-o-mestre-jardineiro/index.html">O Mestre Jardineiro</a></li>
+        </ul>
+    </nav>
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center my-12">
+            <h1 class="text-5xl md:text-7xl font-black text-[#C70039] tracking-tight">Dê Vida a "A ROSA"</h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Uma campanha para cultivar uma história poética sobre amor, perda e aceitação, contada sem palavras, através da magia da animação e da música.</p>
+        </header>
+
+        <main class="space-y-16">
+
+            <section id="goal" class="text-center bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <h2 class="text-2xl font-bold text-gray-500 tracking-wider uppercase">Nossa Meta de Arrecadação</h2>
+                <div class="my-4 text-7xl md:text-9xl font-extrabold text-[#45B7D1]">
+                    R$ 95.000
+                </div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Este valor estratégico de R$ 95.000,00 no Catarse (Tudo ou Nada) cobre todos os custos de produção (R$ 65.000,00), fulfillment das recompensas (R$ 16.250,00), taxas da plataforma (R$ 12.350,00) e custos fixos (R$ 1.400,00), garantindo a qualidade técnica necessária para competir em festivais internacionais.</p>
+            </section>
+            
+            <section id="budget">
+                 <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold text-gray-800">Para Onde Vai o Seu Apoio?</h2>
+                    <p class="mt-2 text-lg text-gray-600">Transparência é fundamental. Veja como cada real contribuído será investido nas diferentes fases do projeto para transformar a visão em realidade. Nossa meta de R$ 95.000,00 no Catarse (Tudo ou Nada) garante a qualidade técnica e mitiga riscos de subestimação de custos.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-center mb-4">Distribuição do Orçamento (%)</h3>
+                        <p class="text-center text-gray-600 mb-4 text-sm">Esta visão percentual mostra a proporção do investimento em cada componente. 68,42% destinados à produção líquida garantem a qualidade técnica necessária para competir em festivais internacionais.</p>
+                        <div class="chart-container">
+                            <canvas id="budgetDonutChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-center mb-4">Valores por Etapa (R$)</h3>
+                        <p class="text-center text-gray-600 mb-4 text-sm">Aqui, detalhamos os valores absolutos para cada fase, oferecendo uma perspectiva clara sobre os custos de dar vida a cada frame da animação.</p>
+                        <div class="chart-container">
+                            <canvas id="budgetBarChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="timeline">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold text-gray-800">Nossa Jornada Criativa</h2>
+                    <p class="mt-2 text-lg text-gray-600">Do conceito à tela, este é o cronograma planejado para a criação de "A ROSA".</p>
+                </div>
+                <div class="relative w-full max-w-4xl mx-auto">
+                    <div class="absolute left-1/2 top-0 bottom-0 w-1 bg-[#4ECDC4] rounded -ml-0.5"></div>
+                    <div class="space-y-12">
+                        <div class="relative">
+                            <div class="md:flex items-center">
+                                <div class="md:w-1/2 text-center md:text-right md:pr-8">
+                                    <div class="bg-white p-6 rounded-2xl shadow-lg inline-block">
+                                        <h3 class="text-xl font-bold text-[#45B7D1]">Campanha</h3>
+                                        <p class="text-sm font-bold text-gray-500">60 Dias</p>
+                                    </div>
+                                </div>
+                                <div class="hidden md:block w-1/2"></div>
+                                <div class="absolute left-1/2 top-1/2 w-4 h-4 bg-white border-4 border-[#4ECDC4] rounded-full -ml-2 -mt-2"></div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                           <div class="md:flex items-center">
+                                <div class="hidden md:block w-1/2"></div>
+                                <div class="md:w-1/2 text-center md:text-left md:pl-8">
+                                     <div class="bg-white p-6 rounded-2xl shadow-lg inline-block">
+                                        <h3 class="text-xl font-bold text-[#45B7D1]">Pré-Produção</h3>
+                                        <p class="text-sm font-bold text-gray-500">1 Mês</p>
+                                    </div>
+                                </div>
+                                <div class="absolute left-1/2 top-1/2 w-4 h-4 bg-white border-4 border-[#4ECDC4] rounded-full -ml-2 -mt-2"></div>
+                            </div>
+                        </div>
+                         <div class="relative">
+                            <div class="md:flex items-center">
+                                <div class="md:w-1/2 text-center md:text-right md:pr-8">
+                                    <div class="bg-white p-6 rounded-2xl shadow-lg inline-block">
+                                        <h3 class="text-xl font-bold text-[#45B7D1]">Produção</h3>
+                                        <p class="text-sm font-bold text-gray-500">4 Meses</p>
+                                    </div>
+                                </div>
+                                <div class="hidden md:block w-1/2"></div>
+                                <div class="absolute left-1/2 top-1/2 w-4 h-4 bg-white border-4 border-[#4ECDC4] rounded-full -ml-2 -mt-2"></div>
+                            </div>
+                        </div>
+                         <div class="relative">
+                           <div class="md:flex items-center">
+                                <div class="hidden md:block w-1/2"></div>
+                                <div class="md:w-1/2 text-center md:text-left md:pl-8">
+                                     <div class="bg-white p-6 rounded-2xl shadow-lg inline-block">
+                                        <h3 class="text-xl font-bold text-[#45B7D1]">Pós-Produção</h3>
+                                        <p class="text-sm font-bold text-gray-500">2 Meses</p>
+                                    </div>
+                                </div>
+                                <div class="absolute left-1/2 top-1/2 w-4 h-4 bg-white border-4 border-[#4ECDC4] rounded-full -ml-2 -mt-2"></div>
+                            </div>
+                        </div>
+                         <div class="relative">
+                            <div class="md:flex items-center">
+                                <div class="md:w-1/2 text-center md:text-right md:pr-8">
+                                    <div class="bg-white p-6 rounded-2xl shadow-lg inline-block">
+                                        <h3 class="text-xl font-bold text-[#45B7D1]">Entrega</h3>
+                                        <p class="text-sm font-bold text-gray-500">7 Meses Pós-Campanha</p>
+                                    </div>
+                                </div>
+                                <div class="hidden md:block w-1/2"></div>
+                                <div class="absolute left-1/2 top-1/2 w-4 h-4 bg-white border-4 border-[#4ECDC4] rounded-full -ml-2 -mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="audience">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold text-gray-800">Para Quem Criamos?</h2>
+                    <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">"A ROSA" é uma história universal, mas que ressoa de forma especial com certos públicos. Identificamos nossos principais apoiadores para focar nossa comunicação.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition-shadow duration-300">
+                        <span class="text-5xl" aria-hidden="true">🎬</span>
+                        <h3 class="mt-4 text-lg font-bold">Amantes de Animação</h3>
+                        <p class="mt-2 text-sm text-gray-600">Pessoas que apreciam a arte e a técnica por trás de filmes de animação e cinema de arte.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition-shadow duration-300">
+                        <span class="text-5xl" aria-hidden="true">💖</span>
+                        <h3 class="mt-4 text-lg font-bold">Apoiadores Culturais</h3>
+                        <p class="mt-2 text-sm text-gray-600">Entusiastas de projetos independentes que valorizam e financiam a cultura.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition-shadow duration-300">
+                        <span class="text-5xl" aria-hidden="true">🌸</span>
+                        <h3 class="mt-4 text-lg font-bold">Fãs de Estéticas Sensíveis</h3>
+                        <p class="mt-2 text-sm text-gray-600">Admiradores do Studio Ghibli e de narrativas poéticas, visuais e emocionantes.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition-shadow duration-300">
+                        <span class="text-5xl" aria-hidden="true">🕊️</span>
+                        <h3 class="mt-4 text-lg font-bold">Buscadores de Emoção</h3>
+                        <p class="mt-2 text-sm text-gray-600">Público que se conecta com histórias humanas, universais e sem barreiras de idioma.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="author" class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold text-gray-800">Sobre o Autor</h2>
+                </div>
+                <div class="max-w-4xl mx-auto text-left">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">LEONARDO PIMENTEL SANTANA</h3>
+                    <p class="text-gray-600 mb-4">Nascido em Recife-PE, Leo Pimentel é escritor, roteirista e dramaturgo.</p>
+                    <p class="text-gray-600 mb-4">Realizou os curtas metragens, Calibre.22 pelas produtoras Mundaú Filmes e Cana Filmes, selecionado para festivais nacionais/internacionais e Propósito-Diário da Pandemia/ Cana Filmes.</p>
+                    <p class="text-gray-600 mb-4">Em 2020 foi premiado na categoria teatro infantil com a peça "Rafael e a Baleia de Nuvem" no 5o. Prêmio Ariano Suassuna de Cultura Popular e Dramaturgia - Recife/Pernambuco. Escreveu os roteiros para longa metragem: João e o Gigante/Produtora TB Produções juntamente com a roteirista Flávia Guimarães, Desígnios, Rafael e a Baleia, Mamulengos/Produtora Na Laje Filmes e A Estrada e o Santo/Produtora Na Laje Filmes. Criou os projetos de série: Serial, Imunes e A Ordem, e também o projeto de longa metragem: Domadora de Urso com a colaboração das diretoras Cláudia Castro e Tande Bressane. Escreveu o roteiro do projeto de curta metragem IROKO, com contexto histórico relacionado com os eventos no Quilombo dos Palmares e os escravizados, que está em desenvolvimento em Alagoas.</p>
+                    <p class="text-gray-600 mb-4">Atualmente, desenvolve em parceria com uma produtora em Pernambuco o projeto de média metragem, a comédia Os Donzelos e escreve o roteiro do documentário Você é o Show - A história da Televisão Pernambucana. Livros publicados : Pegadas de um anjo, Os Cinco Pássaros, O Pintor de Folhas, O seqüestro de Chiquita, O Silêncio da Alma, O Silêncio da Alma ( em Braille), Constelação de Capricórnio, Cobaias, Desígnios, O Reino de Pedra e Iroko. Dos onze livros de ficção publicados, três deles foram adotados como paradidáticos em escolas do Nordeste e o livro em Braille escolhido por um projeto das Universidades Federais e distribuído para bibliotecas públicas e instituições de deficientes visuais. Os livros Constelação de Capricórnio, Cobaias, Desígnios e IROKO estão sendo adaptados para projetos de cinema e TV.</p>
+                    <div class="mt-8 text-center">
+                        <a href="https://www.instagram.com/leopsantana_" class="inline-block bg-[#C70039] text-white font-bold py-2 px-6 rounded-full hover:bg-[#A3002F] transition-colors duration-300">Instagram</a>
+                        <a href="https://www.facebook.com/leonardo.pimentelsantana" class="inline-block bg-[#45B7D1] text-white font-bold py-2 px-6 rounded-full hover:bg-teal-400 transition-colors duration-300 ml-4">Facebook</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="audio-content" class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold text-gray-800">Conheça Nossa História</h2>
+                    <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Ouça nossos podcasts exclusivos e descubra os bastidores, inspirações e o processo criativo por trás de "A ROSA".</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-gradient-to-br from-[#C70039]/10 to-[#C70039]/5 rounded-2xl p-8 border border-[#C70039]/20">
+                        <div class="text-center mb-6">
+                            <div class="text-6xl mb-4" aria-hidden="true">🎙️</div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">"A ROSA: O Gafanhoto e o Beija-Flor"</h3>
+                            <p class="text-gray-600 text-sm">Honestidade, corações divididos e a força de seguir em frente</p>
+                        </div>
+                        <audio id="audio-gafanhoto" controls class="w-full mb-4" preload="metadata">
+                            <source src="audio/a-rosa-o-gafanhoto-e-o-beija-flor_honestidade-coracoes-divididos-e-a-forca-de-seguir-em-frente.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                        <button id="play-gafanhoto" aria-controls="audio-gafanhoto" class="w-full bg-[#C70039] text-white font-bold py-3 px-6 rounded-full text-lg hover:bg-[#A3002F] transition-colors duration-300 shadow-lg hover:shadow-xl">
+                            <span aria-hidden="true">▶️</span> Ouvir Agora
+                        </button>
+                    </div>
+                    <div class="bg-gradient-to-br from-[#4ECDC4]/10 to-[#4ECDC4]/5 rounded-2xl p-8 border border-[#4ECDC4]/20">
+                        <div class="text-center mb-6">
+                            <div class="text-6xl mb-4" aria-hidden="true">📊</div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">"Por Trás dos R$ 95 Mil"</h3>
+                            <p class="text-gray-600 text-sm">Como a animação brasileira "A ROSA" estruturou um crowdfunding de altíssimo nível</p>
+                        </div>
+                        <audio id="audio-crowdfunding" controls class="w-full mb-4" preload="metadata">
+                            <source src="audio/por-tras-dos-rs-95-mil_como-a-animacao-brasileira_a-rosa_estruturou-um-crowdfunding-de-altissimo-nivel.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                        <button id="play-crowdfunding" aria-controls="audio-crowdfunding" class="w-full bg-[#4ECDC4] text-white font-bold py-3 px-6 rounded-full text-lg hover:bg-[#3AAFA9] transition-colors duration-300 shadow-lg hover:shadow-xl">
+                            <span aria-hidden="true">▶️</span> Ouvir Agora
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rewards" class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                 <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold text-gray-800">Seja Parte da Magia: Recompensas</h2>
+                    <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Preparamos recompensas especiais para agradecer seu apoio e trazê-lo para perto do nosso processo criativo.</p>
+                </div>
+                <div class="space-y-4 max-w-3xl mx-auto">
+                    <div class="border border-gray-200 rounded-lg p-4 flex justify-between items-center bg-gray-50">
+                        <div>
+                            <h4 class="font-bold text-[#C70039]">A Semente (R$ 15 - R$ 30)</h4>
+                            <p class="text-sm text-gray-600">Plante flores para colher flores! Agradecimento nas Redes Sociais + Wallpaper Exclusivo.</p>
+                        </div>
+                        <span class="font-black text-lg text-gray-400">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" fill="#8B4513"/>
+                                <circle cx="12" cy="12" r="1" fill="#654321"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 flex justify-between items-center bg-gray-50">
+                        <div>
+                            <h4 class="font-bold text-[#FED766]"> O Broto (R$ 50 - R$ 80)</h4>
+                            <p class="text-sm text-gray-600">A Rosa em Broto (Acesso Antecipado) + Pétalas Digitais Exclusivas.</p>
+                        </div>
+                         <span class="font-black text-lg text-gray-400" aria-hidden="true">🌹</span>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 flex justify-between items-center bg-gray-50">
+                        <div>
+                            <h4 class="font-bold text-[#4ECDC4]">O Espinho (R$ 100 - R$ 140)</h4>
+                            <p class="text-sm text-gray-600">A Rosa Protegida (Acesso Completo) + Nome nos Créditos (Categoria "Guardião Apoiador").</p>
+                        </div>
+                         <span class="font-black text-lg text-gray-400" aria-hidden="true">📌</span>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 flex justify-between items-center bg-gray-50">
+                        <div>
+                            <h4 class="font-bold text-[#45B7D1]">O Buquê de Rosas (R$ 200 - R$ 350)</h4>
+                            <p class="text-sm text-gray-600">Um lindo Buquê de Rosas! Link + Poster Impresso (Alta Qualidade, A4) + Pin Exclusivo.</p>
+                        </div>
+                        <span class="font-black text-lg text-gray-400" aria-hidden="true">💐</span>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 flex justify-between items-center bg-gray-50">
+                        <div>
+                            <h4 class="font-bold text-[#9B59B6]">O Mestre Jardineiro (R$ 500 - R$ 999)</h4>
+                            <p class="text-sm text-gray-600">Você é o Mestre Jardineiro! Recompensas anteriores + Crédito como Produtor Associado (Destaque) + Exibição Privada Online.</p>
+                        </div>
+                        <span class="font-black text-lg text-gray-400" aria-hidden="true">👑</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="stretch-goals" class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold text-gray-800">Metas Estendidas: Vamos Além!</h2>
+                    <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Se ultrapassarmos nossa meta principal, desbloquearemos essas metas estendidas que tornarão "A ROSA" ainda mais especial e acessível.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-gradient-to-br from-[#C70039]/10 to-[#C70039]/5 rounded-2xl p-8 border border-[#C70039]/20 text-center">
+                        <div class="text-5xl mb-4" aria-hidden="true">🌍</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">R$ 110.000</h3>
+                        <h4 class="text-lg font-semibold text-[#C70039] mb-3">Expansão de Acessibilidade e Alcance</h4>
+                        <p class="text-gray-600 text-sm">Dublagem em línguas-chave (inglês/espanhol) e inclusão de Libras, ampliando o potencial de inscrição em festivais internacionais.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-[#C70039] text-white text-xs font-semibold px-3 py-1 rounded-full">Meta 1</span>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-[#4ECDC4]/10 to-[#4ECDC4]/5 rounded-2xl p-8 border border-[#4ECDC4]/20 text-center">
+                        <div class="text-5xl mb-4" aria-hidden="true">🎬</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">R$ 130.000</h3>
+                        <h4 class="text-lg font-semibold text-[#4ECDC4] mb-3">Conteúdo do Processo Criativo</h4>
+                        <p class="text-gray-600 text-sm">Documentário making-of detalhado liberado para todos os apoiadores, explicando o processo complexo da animação.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-[#4ECDC4] text-white text-xs font-semibold px-3 py-1 rounded-full">Meta 2</span>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-[#FED766]/10 to-[#FED766]/5 rounded-2xl p-8 border border-[#FED766]/20 text-center">
+                        <div class="text-5xl mb-4" aria-hidden="true">📱</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">R$ 150.000</h3>
+                        <h4 class="text-lg font-semibold text-[#FED766] mb-3">Expansão Multimídia</h4>
+                        <p class="text-gray-600 text-sm">Aplicativo ou jogo mobile baseado no universo e personagens de "A ROSA", expandindo para mídias adjacentes.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-[#FED766] text-white text-xs font-semibold px-3 py-1 rounded-full">Meta 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <p class="text-center text-lg font-bold text-gray-800 mb-4">Saiba Mais Sobre as Metas Estendidas →</p>
+                    <a href="metas-estendidas/index.html" class="bg-gradient-to-r from-[#C70039] to-[#4ECDC4] text-white font-bold py-3 px-8 rounded-full text-lg hover:shadow-lg transition-all duration-300">
+                        Saiba Mais
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center my-12">
+            <a href="pagina-de-apoio-campanha-crowdfounding/index.html" class="bg-[#C70039] text-white font-bold py-4 px-10 rounded-full text-xl hover:bg-[#A3002F] transition-colors duration-300 shadow-lg hover:shadow-xl">APOIE AGORA</a>
+
+            <div class="mt-10 pt-8 border-t border-gray-200 flex flex-col items-center gap-4">
+                 <img src="favicon/logo_001-Ciano10-azul-meia-noite_99x99.png" alt="Kleber Lessa - Direção de Arte e Criação" class="w-14 h-14 logo-footer" loading="lazy">
+                <div class="text-sm text-gray-600 leading-relaxed">
+                    <p>© 2025 A Rosa – Curta-metragem em financiamento coletivo.</p>
+                    <p>Campanha e Direção de Arte: Kleber Lessa.</p>
+                    <p>Concept Art da Animação e Desenvolvimento Web: Kleber Lessa.</p>
+                    <p>Sua contribuição faz esta história florescer.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 text-sm font-semibold">
+                    <a href="https://www.linkedin.com/in/kleber-lessa-0146202ab" target="_blank" rel="noopener noreferrer" class="text-[#45B7D1] hover:underline">LinkedIn</a>
+                    <a href="https://github.com/kleberlessa" target="_blank" rel="noopener noreferrer" class="text-[#45B7D1] hover:underline">GitHub</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const sharedTooltipCallback = {
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            const donutCtx = document.getElementById('budgetDonutChart');
+            if(donutCtx) {
+                new Chart(donutCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Produção Líquida', 'Fulfillment', 'Taxas Catarse', 'Custos Fixos'],
+                        datasets: [{
+                            label: 'Distribuição do Orçamento',
+                            data: [68.42, 17.11, 13.00, 1.47],
+                            backgroundColor: [
+                                '#C70039',
+                                '#4ECDC4',
+                                '#FED766',
+                                '#45B7D1'
+                            ],
+                            borderColor: '#FFFFFF',
+                            borderWidth: 4,
+                            hoverOffset: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        cutout: '60%',
+                        plugins: {
+                            ...sharedTooltipCallback.plugins,
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    font: {
+                                        family: 'Inter',
+                                        size: 14
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const barCtx = document.getElementById('budgetBarChart');
+            if(barCtx) {
+                new Chart(barCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Produção Líquida', 'Fulfillment', 'Taxas Catarse', 'Custos Fixos'],
+                        datasets: [{
+                            label: 'Valor por Etapa (R$)',
+                            data: [65000, 16250, 12350, 1400],
+                            backgroundColor: [
+                                '#C70039',
+                                '#4ECDC4',
+                                '#FED766',
+                                '#45B7D1'
+                            ],
+                            borderRadius: 8
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                         ...sharedTooltipCallback,
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                grid: {
+                                    display: false,
+                                    drawBorder: false
+                                },
+                                ticks: {
+                                    font: {
+                                       family: 'Inter'
+                                    }
+                                }
+                            },
+                            y: {
+                                grid: {
+                                    display: false,
+                                    drawBorder: false
+                                },
+                                ticks: {
+                                    font: {
+                                       family: 'Inter'
+                                    }
+                                }
+                            }
+                        },
+                        plugins: {
+                            ...sharedTooltipCallback.plugins,
+                            legend: {
+                                display: false
+                            }
+                        }
+                    }
+                });
+            }
+
+            const playGafanhotoButton = document.getElementById('play-gafanhoto');
+            if(playGafanhotoButton) {
+                playGafanhotoButton.addEventListener('click', () => {
+                    document.getElementById('audio-gafanhoto').play();
+                });
+            }
+
+            const playCrowdfundingButton = document.getElementById('play-crowdfunding');
+            if(playCrowdfundingButton) {
+                playCrowdfundingButton.addEventListener('click', () => {
+                    document.getElementById('audio-crowdfunding').play();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

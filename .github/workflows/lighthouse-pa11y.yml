@@ -1,0 +1,54 @@
+name: Lighthouse + Pa11y Audit
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [main]
+
+jobs:
+  audit:
+    name: Run Lighthouse & Pa11y
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Start local server
+        run: |
+          npx http-server ./ -p 8080 -c-1 & echo $! > server.pid
+          npx wait-on http://127.0.0.1:8080
+
+      - name: Run Lighthouse (HTML + JSON)
+        run: |
+          npx -y lighthouse http://127.0.0.1:8080 --chrome-flags="--headless --no-sandbox" --output=json --output=html --output-path=./lighthouse-report --only-categories=performance,accessibility,best-practices,seo
+
+      - name: Check accessibility score
+        run: |
+          node -e "const fs=require('fs');const r=JSON.parse(fs.readFileSync('lighthouse-report.report.json'));const acc=Math.round(r.categories.accessibility.score*100);console.log('accessibility score:',acc);if(acc<90){console.error('Accessibility score < 90');process.exit(1)}"
+
+      - name: Run Pa11y (JSON + HTML)
+        run: |
+          npx -y pa11y http://127.0.0.1:8080 --reporter json > pa11y.json || true
+          npx -y pa11y http://127.0.0.1:8080 --reporter html > pa11y-report.html || true
+          node -e "const fs=require('fs');const r=JSON.parse(fs.readFileSync('pa11y.json'));if(Array.isArray(r)&&r.length>0){console.error('Pa11y found issues: '+r.length);process.exit(1)} console.log('Pa11y OK')"
+
+      - name: Upload audit reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-reports
+          path: |
+            lighthouse-report.report.html
+            lighthouse-report.report.json
+            pa11y-report.html
+            pa11y.json
+
+      - name: Stop server
+        if: always()
+        run: |
+          if [ -f server.pid ]; then kill "$(cat server.pid)" || true; fi

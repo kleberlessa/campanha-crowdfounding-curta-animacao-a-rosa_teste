@@ -1,0 +1,53 @@
+body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        nav {
+            background-color: #C70039;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            list-style: none;
+            margin: 0;
+            padding: 12px 16px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 8px 12px;
+            border-radius: 9999px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .chart-container {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 500px;
+            height: 320px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+/* Estilos para o logo no rodapé */
+.logo-footer {
+    forced-color-adjust: none;
+    color-scheme: light;
+}
+.logo-footer * {
+    forced-color-adjust: none;
+}
