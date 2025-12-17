@@ -46,3 +46,9 @@ build/
 *.xetdata
 *.xetbackup
 *xet
+
+# Relatórios de Auditoria (Ruído)
+pally.json
+lighthouse-report.html
+*.json
+!package.json
