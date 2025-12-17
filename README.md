@@ -1,3 +1,18 @@
+---
+language: pt
+license: cc-by-4.0
+task_categories:
+- audio-classification
+- text-generation
+tags:
+- crowdfunding
+- animation
+- accessibility
+pretty_name: "Campanha Crowdfunding A ROSA - Assets"
+size_categories:
+- n<1K
+---
+
 # Campanha de Crowdfunding "A ROSA"
 
 Este repositório contém o website promocional fictício para a campanha de crowdfunding do curta-metragem de animação "A ROSA".
