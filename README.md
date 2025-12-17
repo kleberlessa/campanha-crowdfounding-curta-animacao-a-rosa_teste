@@ -43,7 +43,7 @@ Para visualizar o site localmente, basta abrir o arquivo `index.html` em seu nav
 
 ## Contribuição
 
-Este projeto é um website estático para a campanha de crowdfunding. No momento, não estamos aceitando contribuições diretas ao código. No entanto, o melhor suporte que você pode dar é [apoiar a nossa campanha no Catarse](LINK_PARA_CATARSE_AQUI) e divulgar o projeto!
+Este projeto é um website estático para a campanha de crowdfunding. No momento, não estamos aceitando contribuições diretas ao código.
 
 ## Licença
 
