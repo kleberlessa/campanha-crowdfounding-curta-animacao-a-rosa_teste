@@ -1,0 +1,38 @@
+# ============================================
+# ARQUIVOS CRÍTICOS DO HUGGING FACE - NÃO FORMATAR!
+# ============================================
+README.md               # Contém YAML funcional do HF - NÃO MODIFICAR
+.gitattributes          # Configuração do Git LFS - NÃO MODIFICAR
+
+# ============================================
+# DIRETÓRIOS DO SISTEMA
+# ============================================
+node_modules/
+.git/
+.vscode/
+.huggingface/
+package-lock.json
+
+# ============================================
+# ASSETS DA CAMPANHA (preservar binários e textos manuais)
+# ============================================
+audio/**/*
+doc/**/*
+**/*.vtt                # Legendas devem manter formato estrito
+**/*.txt                # Transcrições manuais
+
+# ============================================
+# MÍDIA
+# ============================================
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp3
+*.mp4
+*.ico
+
+# ============================================
+# BACKUPS
+# ============================================
+*.backup.*

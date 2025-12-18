@@ -1,0 +1,24 @@
+{
+  "name": "campanha-crowdfounding-curta-animacao-a-rosa_teste",
+  "version": "1.0.0",
+  "description": "--- language: pt license: cc-by-4.0 task_categories: - audio-classification - text-generation tags: - crowdfunding - animation - accessibility pretty_name: \"Campanha Crowdfunding A ROSA - Assets\" size_categories: - n<1K ---",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleberlessa/campanha-crowdfounding-curta-animacao-a-rosa_teste.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kleberlessa/campanha-crowdfounding-curta-animacao-a-rosa_teste/issues"
+  },
+  "homepage": "https://github.com/kleberlessa/campanha-crowdfounding-curta-animacao-a-rosa_teste#readme"
+}

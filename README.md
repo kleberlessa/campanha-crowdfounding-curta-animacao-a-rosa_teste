@@ -2,15 +2,15 @@
 language: pt
 license: cc-by-4.0
 task_categories:
-- audio-classification
-- text-generation
+  - audio-classification
+  - text-generation
 tags:
-- crowdfunding
-- animation
-- accessibility
-pretty_name: "Campanha Crowdfunding A ROSA - Assets"
+  - crowdfunding
+  - animation
+  - accessibility
+pretty_name: 'Campanha Crowdfunding A ROSA - Assets'
 size_categories:
-- n<1K
+  - n<1K
 ---
 
 # Campanha de Crowdfunding "A ROSA"
@@ -29,13 +29,13 @@ O website serve como uma ferramenta de divulgação e informação para a campan
 
 O projeto é organizado da seguinte forma:
 
--   `index.html`: A página principal (home) da campanha, apresentando um resumo geral e os principais pontos.
--   `styles.css`: O arquivo CSS global para estilização da barra de navegação e outros elementos comuns.
--   `audio/`: Contém arquivos de áudio (podcasts) relacionados à história e aos bastidores da campanha.
--   `doc/`: Documentação interna do projeto, incluindo o plano estratégico da campanha.
--   `metas-estendidas/`: Página dedicada a apresentar as metas adicionais que serão alcançadas se a arrecadação exceder o objetivo inicial.
--   `pagina-de-apoio-campanha-crowdfounding/`: Uma página central para visualização e seleção das diferentes recompensas disponíveis.
--   `recompensa-*/`: Diretórios contendo as páginas de visualização de cada nível de recompensa (ex: `recompensa-semente/index.html`).
+- `index.html`: A página principal (home) da campanha, apresentando um resumo geral e os principais pontos.
+- `styles.css`: O arquivo CSS global para estilização da barra de navegação e outros elementos comuns.
+- `audio/`: Contém arquivos de áudio (podcasts) relacionados à história e aos bastidores da campanha.
+- `doc/`: Documentação interna do projeto, incluindo o plano estratégico da campanha.
+- `metas-estendidas/`: Página dedicada a apresentar as metas adicionais que serão alcançadas se a arrecadação exceder o objetivo inicial.
+- `pagina-de-apoio-campanha-crowdfounding/`: Uma página central para visualização e seleção das diferentes recompensas disponíveis.
+- `recompensa-*/`: Diretórios contendo as páginas de visualização de cada nível de recompensa (ex: `recompensa-semente/index.html`).
 
 ## Como Visualizar o Site
 
@@ -47,4 +47,13 @@ Este projeto é um website estático para a campanha de crowdfunding. No momento
 
 ## Licença
 
-[INSERIR INFORMAÇÕES DE LICENÇA AQUI, se aplicável. Ex: MIT, Creative Commons, etc.]
+Este projeto está licenciado sob a licença **Creative Commons Attribution 4.0 International (CC-BY-4.0)**.
+
+Isso significa que você é livre para:
+* **Compartilhar**: copiar e redistribuir o material em qualquer suporte ou formato.
+* **Adaptar**: remixar, transformar e criar a partir do material para qualquer fim, mesmo comercial.
+
+Desde que respeite os seguintes termos:
+* **Atribuição**: Você deve dar o crédito apropriado, prover um link para a licença e indicar se mudanças foram feitas.
+
+Para mais detalhes, visite: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)

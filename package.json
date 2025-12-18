@@ -1,0 +1,36 @@
+{
+  "name": "campanha-crowdfounding-curta-animacao-a-rosa_teste",
+  "version": "1.0.0",
+  "description": "Site da campanha de crowdfunding 'A ROSA' - Ambiente de desenvolvimento",
+  "main": "index.html",
+  "scripts": {
+    "format": "prettier --write . --ignore-path .prettierignore",
+    "format:check": "prettier --check . --ignore-path .prettierignore",
+    "serve": "live-server . --port=5501 --entry-file=index.html",
+    "prepare": "npm run format:check",
+    "clean": "rm -rf node_modules package-lock.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleberlessa/campanha-crowdfounding-curta-animacao-a-rosa_teste.git"
+  },
+  "keywords": [
+    "animacao",
+    "crowdfunding",
+    "curta-metragem",
+    "acessibilidade"
+  ],
+  "author": "Kleber Lessa",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/kleberlessa/campanha-crowdfounding-curta-animacao-a-rosa_teste/issues"
+  },
+  "homepage": "https://github.com/kleberlessa/campanha-crowdfounding-curta-animacao-a-rosa_teste#readme",
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "live-server": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
