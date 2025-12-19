@@ -50,5 +50,6 @@ build/
 # Relatórios de Auditoria (Ruído)
 pally.json
 lighthouse-report.html
-*.json
-!package.json
+
+# Backup files
+package.json.backup.*
