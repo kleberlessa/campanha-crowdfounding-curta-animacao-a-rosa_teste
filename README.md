@@ -43,7 +43,7 @@ Para visualizar o site localmente, basta abrir o arquivo `index.html` em seu nav
 
 ## Contribuição
 
-Este projeto é um website estático para a campanha de crowdfunding. No momento, não estamos aceitando contribuições diretas ao código.
+Este projeto é um website estático para a campanha de crowdfunding. No momento, não estamos aceitando contribuições diretas ao código!
 
 ## Licença
 
